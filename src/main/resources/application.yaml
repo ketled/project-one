@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: mybooking-project-one
+server:
+  port: 8800
+  servlet:
+    context-path: /mybooking/project-one
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/mybooking/cloud-discovery/eureka
+  instance:
+    health-check-url-path: /actuator/health
